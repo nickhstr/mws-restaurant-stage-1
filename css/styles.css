@@ -4,6 +4,9 @@
 /* ====================== Variables ====================== */
 :root {
 	--restaurant-container-width: 800px;
+	--button-link-color: #c34c00;
+	--link-light-color: #ffa165;
+	--header-footer-color: #252831;
 }
 @media (max-width: 1399px) {
 	:root {
@@ -33,7 +36,7 @@ ul, li {
 	color: #333;
 }
 a {
-	color: orange;
+	color: var(--button-link-color);
 	text-decoration: none;
 }
 a:hover, a:focus {
@@ -55,18 +58,21 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   min-height: 100%;
 }
 #footer {
-  background-color: #444;
-  color: #aaa;
+  background-color: var(--header-footer-color);
+  color: #fff;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
 }
+#footer a {
+	color: var(--link-light-color);
+}
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
-  background-color: #252831;
+  background-color: var(--header-footer-color);
   text-align: center;
 }
 nav h1 {
@@ -117,13 +123,14 @@ nav h1 a {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: #01447e;
     text-decoration: none;
+		font-weight: bold;
 }
 
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
-    color: #01447e;
+    color: #003665;
     text-decoration: underline;
 }
 /* ====================== Map ====================== */
@@ -146,7 +153,7 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-container {
   width: 100%;
-  background-color: #3397DB;
+  background-color: #164cb4;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -269,7 +276,7 @@ nav h1 a {
   min-width: 100%;
 }
 #restaurants-list li h1 {
-  color: #f18200;
+  color: var(--button-link-color);
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -283,7 +290,7 @@ nav h1 a {
   font-size: 11pt;
 }
 #restaurants-list li a {
-  background-color: orange;
+  background-color: var(--button-link-color);
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
@@ -343,7 +350,7 @@ nav h1 a {
 	box-sizing: border-box;
 }
 #restaurant-name {
-  color: #f18200;
+  color: var(--button-link-color);
   font-family: Arial,sans-serif;
   font-size: 20pt;
   font-weight: 200;
@@ -403,7 +410,7 @@ nav h1 a {
 	}
 }
 #reviews-container h2 {
-  color: #f58500;
+  color: var(--button-link-color);
   font-size: 24pt;
   font-weight: 300;
   letter-spacing: -1px;
