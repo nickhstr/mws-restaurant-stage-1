@@ -75,7 +75,7 @@ window.initMap = () => {
     lat: 40.722216,
     lng: -73.987501
   };
-  const zoom = (self.innerWidth < 750) ? 11 : 12
+  const zoom = (self.innerWidth < 750) ? 11 : 12;
   self.map = new google.maps.Map(document.getElementById('map'), {
     zoom,
     center: loc,
